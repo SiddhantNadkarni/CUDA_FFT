@@ -114,8 +114,8 @@ int main()
     for(int i = 0; i < NX; i++)
     {
         // std::cout << i << ". cos: " <<  h_convolved_signal[i].x << ", sin: " << h_convolved_signal[i].y << '\n';
-
-        output_file << h_convolved_signal[i].x << '\n';
+        double val = pow(pow(h_convolved_signal[i].x, 2) + pow(h_convolved_signal[i].y, 2), 0.5);
+        output_file << val << '\n';
     }
 
     //clear FFT allocated resources
