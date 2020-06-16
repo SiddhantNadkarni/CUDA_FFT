@@ -12,9 +12,10 @@ inputchart.plot()
 plt.title('Input data')
 plt.xlabel('time')
 plt.ylabel('Amplitude')
+plt.savefig('input_cuFFT_Sin_Wave.png')
 
 outputchart = pd.read_table(outputdatafile)
 outputchart.plot()
 plt.title('Output data (FFT)')
-
+plt.savefig('output_cuFFT_abs.png')
 plt.show()
